@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facultad</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>API Facultad</h1>
+    </header>
+    <main>
+
+      <section>
+        <h2>Consultas a los datos de la Facultad X</h2>
+        <dl>
+            
+          <!-- ALUMNOS -->
+          <div>
+            <dt>
+              <a href="/alumnos"> <span class="enlace">/alumnos</span></a>
+            </dt>
+            <dd>Datos completos de todos los alumnos</dd>
+          </div>
+          <div>
+            <dt>
+              <form id="formApellidoLetra">
+                <label> <span class="enlace">/alumnos</span><input type="text" id="letras-apellido" 
+                  placeholder="Iniciales del apellido" /></label>
+              </form>
+            </dt>
+            <dd>
+              Búsqueda de alumnos por letras iniciales del primer apellido
+            </dd>
+          </div>
+
+            <!-- PROFESORES -->
+
+          
+
+        </dl>
+      </section>
+
+      <section>
+        <dl>
+          <div>
+            <dt>
+              <a href="/profesores"> <span class="enlace">/profesores</span></a>
+            </dt>
+            <dd>Datos completos de todos los profesores</dd>
+          </div>
+          <div>
+            <dt>
+              <form id="formApellidoNombreProfesor">
+                <label> <span class="enlace">/profesores</span><input type="text" id="letras-apellido-profe" 
+                  placeholder="Apellido del profesor" /></label>
+
+                <label> <span class="enlace">/profesores</span><input type="text" id="letras-nombre-profe" 
+                  placeholder="Nombre del profesor" /></label>
+              
+              <button type="submit">Enviar</button>
+              </form>
+            </dt>
+            <dd>
+              Búsqueda de profesores por primer apellido y nombre
+            </dd>
+          </div>
+
+        </dl>
+      </section>
+
+      
+
+    </main>
+    <script src="js/facultad.js"></script>
+  </body>
+</html>
